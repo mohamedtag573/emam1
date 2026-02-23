@@ -144,7 +144,7 @@ function Show-Menu {
 #  RUN OPTION FROM GITHUB
 # ================================================================
 function Run-Option($num) {
-    $url = "https://raw.githubusercontent.com/mohamedtag573/emam/main/scripts/$num"
+    $url = "https://raw.githubusercontent.com/mohamedtag573/emam1/main/scripts/$num"
     try {
         Write-Host ""
         Write-Host "    [~] Loading $num ..." -ForegroundColor DarkCyan
