@@ -148,7 +148,7 @@ function Run-Option($num) {
     try {
         Write-Host ""
         Write-Host "    [~] Loading $num ..." -ForegroundColor DarkCyan
-        $code = (Invoke-WebRequest -Uri $url -UseBasicParsing).Content
+        $code = (New-Object Net.WebClient).DownloadString($url)
         Invoke-Expression $code
     } catch {
         Write-Host ""
